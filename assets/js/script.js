@@ -8,7 +8,6 @@ var numbers = "1234567890";
 var userChoice = "";
 
 
-// Write password to the #password input
 function generatePassword () {
   length = prompt ("Please choose a length for password.");
   if (length < 8 || length > 128 || isNaN(length)  ) {
