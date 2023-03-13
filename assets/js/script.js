@@ -66,36 +66,11 @@ function writePassword() {
   passwordText.value = password;
 }
 
+function copyToClipboard() {
+  var copyText = document.getElementById("password");
+  copyText.select();
+  document.execCommand("copy")
+  alert("Copied the text: " + copyText.value);
+}
 
-// Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
-
-
-
-// Write password to the #password input
-// function writePassword() {
-//   var password = generatePassword();
-//   var passwordText = document.querySelector("#password");
-
-//   passwordText.value = password;
-
-// }
-
-// // Add event listener to generate button
-// generateBtn.addEventListener("click", writePassword);
-
-// needs to have at least 8 characters, less than 128
-
-// pw box needs to be clickable and typable
-
-// user needs to be prompted for pw criteria
-
-// user should select desired criteria
-
-// should prompt user to select lower, upper, numeric, and/or special characters
-
-// when all prompts are answered, input should be validated
-
-// final password should be displayed in an alert
-
-//ability to copy password to clipboard
